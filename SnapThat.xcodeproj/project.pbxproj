@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171E931B1E7183BF003F26D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 171E931A1E7183BF003F26D0 /* GoogleService-Info.plist */; };
+		171E931D1E7185B4003F26D0 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E931C1E7185B4003F26D0 /* SnapsViewController.swift */; };
 		179371AF1E6EE6080006ECAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179371AE1E6EE6080006ECAD /* AppDelegate.swift */; };
-		179371B11E6EE6080006ECAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179371B01E6EE6080006ECAD /* ViewController.swift */; };
+		179371B11E6EE6080006ECAD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179371B01E6EE6080006ECAD /* SignInViewController.swift */; };
 		179371B41E6EE6080006ECAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179371B21E6EE6080006ECAD /* Main.storyboard */; };
 		179371B61E6EE6080006ECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179371B51E6EE6080006ECAD /* Assets.xcassets */; };
 		179371B91E6EE6080006ECAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179371B71E6EE6080006ECAD /* LaunchScreen.storyboard */; };
+		BD62DE2ECFDE2428A30A53C2 /* Pods_SnapThat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF3F05C0A6224246804E15A /* Pods_SnapThat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171E93171E7182CD003F26D0 /* SnapThat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapThat.entitlements; sourceTree = "<group>"; };
+		171E931A1E7183BF003F26D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		171E931C1E7185B4003F26D0 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		179371AB1E6EE6080006ECAD /* SnapThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179371AE1E6EE6080006ECAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		179371B01E6EE6080006ECAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		179371B01E6EE6080006ECAD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		179371B31E6EE6080006ECAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		179371B51E6EE6080006ECAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179371B81E6EE6080006ECAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179371BA1E6EE6080006ECAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF3F05C0A6224246804E15A /* Pods_SnapThat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapThat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B9E20E1514566DB71C96AE /* Pods-SnapThat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapThat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapThat/Pods-SnapThat.release.xcconfig"; sourceTree = "<group>"; };
+		C06C1BA4FBAA4B4016CF202D /* Pods-SnapThat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapThat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapThat/Pods-SnapThat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD62DE2ECFDE2428A30A53C2 /* Pods_SnapThat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				179371AD1E6EE6080006ECAD /* SnapThat */,
 				179371AC1E6EE6080006ECAD /* Products */,
+				9AE622EBDDECC039408CAA77 /* Pods */,
+				1CCCB9CF8B89CDAC02B528D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,34 @@
 		179371AD1E6EE6080006ECAD /* SnapThat */ = {
 			isa = PBXGroup;
 			children = (
+				171E93171E7182CD003F26D0 /* SnapThat.entitlements */,
 				179371AE1E6EE6080006ECAD /* AppDelegate.swift */,
-				179371B01E6EE6080006ECAD /* ViewController.swift */,
+				179371B01E6EE6080006ECAD /* SignInViewController.swift */,
+				171E931C1E7185B4003F26D0 /* SnapsViewController.swift */,
 				179371B21E6EE6080006ECAD /* Main.storyboard */,
 				179371B51E6EE6080006ECAD /* Assets.xcassets */,
 				179371B71E6EE6080006ECAD /* LaunchScreen.storyboard */,
 				179371BA1E6EE6080006ECAD /* Info.plist */,
+				171E931A1E7183BF003F26D0 /* GoogleService-Info.plist */,
 			);
 			path = SnapThat;
+			sourceTree = "<group>";
+		};
+		1CCCB9CF8B89CDAC02B528D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF3F05C0A6224246804E15A /* Pods_SnapThat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AE622EBDDECC039408CAA77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06C1BA4FBAA4B4016CF202D /* Pods-SnapThat.debug.xcconfig */,
+				43B9E20E1514566DB71C96AE /* Pods-SnapThat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 179371BD1E6EE6080006ECAD /* Build configuration list for PBXNativeTarget "SnapThat" */;
 			buildPhases = (
+				9208D076DCB14F018892C82D /* [CP] Check Pods Manifest.lock */,
 				179371A71E6EE6070006ECAD /* Sources */,
 				179371A81E6EE6070006ECAD /* Frameworks */,
 				179371A91E6EE6070006ECAD /* Resources */,
+				AEEB592F005F2D7E4559B59B /* [CP] Embed Pods Frameworks */,
+				07D6B6D35F650D0B3928055E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +131,13 @@
 				TargetAttributes = {
 					179371AA1E6EE6070006ECAD = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PNZV94EX83;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				179371B91E6EE6080006ECAD /* LaunchScreen.storyboard in Resources */,
+				171E931B1E7183BF003F26D0 /* GoogleService-Info.plist in Resources */,
 				179371B61E6EE6080006ECAD /* Assets.xcassets in Resources */,
 				179371B41E6EE6080006ECAD /* Main.storyboard in Resources */,
 			);
@@ -131,13 +173,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07D6B6D35F650D0B3928055E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapThat/Pods-SnapThat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9208D076DCB14F018892C82D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AEEB592F005F2D7E4559B59B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapThat/Pods-SnapThat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		179371A71E6EE6070006ECAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179371B11E6EE6080006ECAD /* ViewController.swift in Sources */,
+				179371B11E6EE6080006ECAD /* SignInViewController.swift in Sources */,
 				179371AF1E6EE6080006ECAD /* AppDelegate.swift in Sources */,
+				171E931D1E7185B4003F26D0 /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +347,11 @@
 		};
 		179371BE1E6EE6080006ECAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06C1BA4FBAA4B4016CF202D /* Pods-SnapThat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapThat/SnapThat.entitlements;
+				DEVELOPMENT_TEAM = PNZV94EX83;
 				INFOPLIST_FILE = SnapThat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CDSApps.SnapThat;
@@ -268,8 +362,11 @@
 		};
 		179371BF1E6EE6080006ECAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B9E20E1514566DB71C96AE /* Pods-SnapThat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SnapThat/SnapThat.entitlements;
+				DEVELOPMENT_TEAM = PNZV94EX83;
 				INFOPLIST_FILE = SnapThat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CDSApps.SnapThat;
@@ -297,6 +394,7 @@
 				179371BF1E6EE6080006ECAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
