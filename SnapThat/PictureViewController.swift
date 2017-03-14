@@ -52,9 +52,10 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         let imagesFolder = FIRStorage.storage().reference().child("Images")
         
-        let imageData = UIImagePNGRepresentation(imageView.image!)!
+        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
-        imagesFolder.child("Images.png").put(imageData, metadata: nil, completion: {(metadata, error) in
+        
+        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
             print("We tried to upload!")
             
             if error != nil {
