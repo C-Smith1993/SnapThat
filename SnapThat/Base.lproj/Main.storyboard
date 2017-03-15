@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,6 +115,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Cqy-89-ww0" id="th6-ql-jmt"/>
+                        <segue destination="9WO-p3-EVf" kind="show" identifier="viewSnapSegue" id="EIp-y6-mwH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rlq-bb-dG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +184,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4Y-zY-yn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2586" y="137"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="mP7-Yx-Veg">
+            <objects>
+                <viewController id="9WO-p3-EVf" customClass="ViewSnapViewController" customModule="SnapThat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9bS-7h-Zjb"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvP-iY-Kp7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yKy-uV-DXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is me saying hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4em-MZ-yxX">
+                                <rect key="frame" x="21" y="636" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bn8-6r-etc">
+                                <rect key="frame" x="26" y="74" width="323" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bn8-6r-etc" firstAttribute="top" secondItem="9bS-7h-Zjb" secondAttribute="bottom" constant="10" id="B1U-LH-DBK"/>
+                            <constraint firstItem="4em-MZ-yxX" firstAttribute="top" secondItem="Bn8-6r-etc" secondAttribute="bottom" constant="10" id="Du6-yo-zLc"/>
+                            <constraint firstItem="NvP-iY-Kp7" firstAttribute="top" secondItem="4em-MZ-yxX" secondAttribute="bottom" constant="10" id="GBE-Rw-6bb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bn8-6r-etc" secondAttribute="trailing" constant="10" id="XQk-xo-OJu"/>
+                            <constraint firstItem="4em-MZ-yxX" firstAttribute="leading" secondItem="yKy-uV-DXI" secondAttribute="leadingMargin" constant="5" id="bpV-kE-g3O"/>
+                            <constraint firstItem="Bn8-6r-etc" firstAttribute="leading" secondItem="yKy-uV-DXI" secondAttribute="leadingMargin" constant="10" id="nXN-gR-fO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4em-MZ-yxX" secondAttribute="trailing" constant="5" id="uKS-Tp-Kvu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Bn8-6r-etc" id="47V-oe-Mg2"/>
+                        <outlet property="label" destination="4em-MZ-yxX" id="nE7-ca-lEM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAg-zU-Dd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="846"/>
         </scene>
         <!--Select User View Controller-->
         <scene sceneID="6ed-lR-qZX">

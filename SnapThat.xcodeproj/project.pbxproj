@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		171E931B1E7183BF003F26D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 171E931A1E7183BF003F26D0 /* GoogleService-Info.plist */; };
 		171E931D1E7185B4003F26D0 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E931C1E7185B4003F26D0 /* SnapsViewController.swift */; };
+		178644DD1E79750000C79E8D /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178644DC1E79750000C79E8D /* ViewSnapViewController.swift */; };
 		179371AF1E6EE6080006ECAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179371AE1E6EE6080006ECAD /* AppDelegate.swift */; };
 		179371B11E6EE6080006ECAD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179371B01E6EE6080006ECAD /* SignInViewController.swift */; };
 		179371B41E6EE6080006ECAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179371B21E6EE6080006ECAD /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		171E93171E7182CD003F26D0 /* SnapThat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnapThat.entitlements; sourceTree = "<group>"; };
 		171E931A1E7183BF003F26D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		171E931C1E7185B4003F26D0 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		178644DC1E79750000C79E8D /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		179371AB1E6EE6080006ECAD /* SnapThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179371AE1E6EE6080006ECAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179371B01E6EE6080006ECAD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				171E931C1E7185B4003F26D0 /* SnapsViewController.swift */,
 				17AB40541E72ED4700CA7FF6 /* PictureViewController.swift */,
 				17BCD4151E782AD400FD5845 /* SelectUserViewController.swift */,
+				178644DC1E79750000C79E8D /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				179371B11E6EE6080006ECAD /* SignInViewController.swift in Sources */,
 				17AB40551E72ED4700CA7FF6 /* PictureViewController.swift in Sources */,
 				17BCD4161E782AD400FD5845 /* SelectUserViewController.swift in Sources */,
+				178644DD1E79750000C79E8D /* ViewSnapViewController.swift in Sources */,
 				17EA982C1E7924A1006E5BBB /* Snap.swift in Sources */,
 				179371AF1E6EE6080006ECAD /* AppDelegate.swift in Sources */,
 				171E931D1E7185B4003F26D0 /* SnapsViewController.swift in Sources */,
